@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Status</title>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      text-align: center;
+      background: #1e293b;
+      padding: 3rem 2.5rem;
+      border-radius: 16px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+      max-width: 500px;
+      width: 90%;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #ef4444;
+    }
+
+    p {
+      color: #94a3b8;
+      margin-bottom: 2rem;
+      font-size: 1rem;
+    }
+
+    .icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .btn {
+      background: #ef4444;
+      color: #fff;
+      border: none;
+      padding: 0.75rem 2rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #dc2626;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="icon">❌</div>
+    <h1>Application Rejected</h1>
+    <p>
+      We regret to inform you that your application has not been selected at this time.
+      We appreciate your interest and encourage you to apply again in the future.
+    </p>
+
+    <button class="btn" onclick="goBack()">Go Back</button>
+  </div>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</body>
+</html>

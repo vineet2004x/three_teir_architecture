@@ -1,0 +1,21 @@
+# Prerequisites to run this project
+
+- Docker (version 20.10 or higher)
+- Docker Compose (version 2.0 or higher)
+- Port 80, 3000, and 3306 available on the host machine
+
+# Backend Dependencies (installed automatically via Docker)
+
+- Node.js 18 (Alpine)
+- express ^4.18.2
+- mysql2 ^3.6.0
+
+# Services
+
+- Frontend: nginx:alpine
+- Backend: node:18-alpine
+- Database: mysql:8.0
+
+# Quick Start
+
+docker compose up --build
