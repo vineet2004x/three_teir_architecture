@@ -1,4 +1,4 @@
-# Docker-Based 3-Tier Application
+# Docker-Based 3-Tier architecture
 
 A containerized three-tier web application using **Nginx**, **Node.js**, and **MySQL** with Docker Compose.
 
